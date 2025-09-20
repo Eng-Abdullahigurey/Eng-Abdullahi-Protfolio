@@ -1522,3 +1522,71 @@
     padding: 0.5rem 1rem;
   }
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0f172a;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-menu li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: #0f172a;
+  padding: 1rem 0;
+  list-style: none;
+  gap: 1rem;
+  text-align: center;
+}
+
+.mobile-menu li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
